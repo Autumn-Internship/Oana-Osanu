@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | H&M Romania</title>
+</head>
+<body>
+    <header>
+        <h1>ÎNREGISTRARE CLIENT NOU</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>DATELE MELE</legend>
+                <!--Put the label element inside a div to respect the design and because the challenge was to 
+                    make a form without using CSS.-->
+                <div>
+                    <label for="email">E-mail<abbr aria-label="required">*</abbr></label>
+                </div>
+                <input type="email" id="email" name="email" aria-describedby="emailDescription" maxlength="40" required>
+                <div id="emailDescription">Vă rugăm să introduceţi o adresă de e-mail</div>
+                
+                <div>
+                    <label for="password">Parolă<abbr aria-label="required">*</abbr></label>
+                </div>
+                <input type="password" id="password" name="password" minlength="8" maxlength="25" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).+" aria-describedby="passwordRequirements"  required>
+                <div id="passwordRequirements">Minimum 8 caractere, 1 cifră, 1 majusculă, 1 minusculă</div>
+            </fieldset>
+            <fieldset>
+                <legend>ADRESĂ DE LIVRARE</legend>
+                <div>
+                    <label for="firstName">Prenume<abbr aria-label="required">*</abbr></label>
+                </div>
+                <input type="text" id="firstName" name="firstName" required>
+                
+                <div>
+                    <label for="lastName">Nume<abbr aria-label="required">*</abbr></label>
+                </div>
+                <input type="text" id="lastName" name="lastName" required>
+                
+                <div>
+                    <label for="adress">Adresă<abbr aria-label="required">*</abbr></label>
+                </div>
+                <input type="text" id="adress" name="adress" aria-describedby="adressDescription" required>
+                <div id="adressDescription">Adresă (stradă și număr)</div>
+                
+                <div>
+                    <label for="adressDetails">Continuare adresă</label>
+                </div>
+                <input type="text" id="adressDetails" name="adressDetails" aria-describedby="adressDetailsDescription">
+                <div id="adressDetailsDescription">Bloc, etaj, apartament etc.</div>
+                
+                <div>
+                    <label for="city">Oraș(Nu utilizați abrevieri)<abbr aria-label="required">*</abbr></label>
+                </div>
+                <input type="text" id="city" name="city" aria-describedby="cityDescription" required>
+                <div id="cityDescription">Localitate</div>
+
+                <div>
+                    <label for="postalCode">Cod poștal<abbr aria-label="required">*</abbr></label>
+                </div>
+                <input type="text" id="postalCode" name="postalCode" pattern="\d{6}" aria-describedby="postalCodeDescription" required>
+                <div id="postalCodeDescription">Introduceţi codul dvs. poştal. De exemplu 030036</div>
+            </fieldset>
+            
+            <input type="checkbox" name="emailMarketing" id="emailMarketing">
+            <label for="emailMarketing">Da, trimite-mi oferte prin e-mail, invitații speciale la promoții și evenimente și noutăți despre ultimele tendințe
+            </label>
+            
+            <fieldset>
+                <legend>DATE PERSONALE</legend>
+                <div>
+                    <label for="birthday">Data nașterii<abbr aria-label="required">*</abbr></label>
+                </div>
+                <input type="date" id="birthday" name="birthday" max="2002-12-31" aria-describedby="dateInstruction" required>
+
+                <div>
+                    <label for="phoneNr">Număr de mobil<abbr aria-label="required">*</abbr></label>
+                </div>
+                <input title="Prefix" type="tel" name="phonePrefix" value="+40" pattern="^(?:\s*)\+[0-9]{1,4}(?:\s*)$" maxlength="4" size="2" required>
+                <input id="phoneNr" type="tel" name="phoneNr" pattern="\d{9}" aria-describedby="phoneInstruction" required>
+                <div id="phoneInstruction">De ex 756 155 860</div>
+            </fieldset>
+
+            <div id="termsAndConfidentiality">Dând clic pe „Continuă cu livrarea”, sunt de acord cu Termenii și condițiile calității de membru în programul de loialitate H&M.
+                <br><br>H&M îți va prelucra datele cu caracter personal pentru a-ți oferi o experiență de membru completă, în conformitate cu Politica de confidențialitate H&M.
+            </div>
+            <input type="submit" aria-describedby="termsAndConfidentiality" value="CONTINUATI CU LIVRAREA">
+        </form>
+    </main>
+</body>
+</html>
