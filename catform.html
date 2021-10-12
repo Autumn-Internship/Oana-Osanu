@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./catform.css">
     <title>Cat Contest Signup</title>
 </head>
 <body>
@@ -11,55 +15,57 @@
         <h1>Cat Contest Signup</h1>
     </header>
     <main>
-        <strong>You can sign up for the contest until <time datetime="2021-11-15">November 15</time>.</strong>
+        <p><strong>You can sign up for the contest until <time datetime="2021-11-15">November 15</time>.</strong></p>
         <form>
             <fieldset>
                 <legend>OWNER INFO</legend>
                 <div>
-                    <label for="firstName">First Name</label>
-                    <input id="firstName" type="text" name="firstName" required>
+                    <div class="input-wrapper">
+                        <label class="required" for="firstName">First Name</label>
+                        <input id="firstName" type="text" name="firstName" required>
+                    </div>
+                    <div class="input-wrapper input-wrapper-right">
+                        <label class="required" for="lastName">Last Name</label>
+                        <input id="lastName" type="text" name="lastName" required>
+                    </div>
                 </div>
                 <div>
-                    <label for="lastName">Last Name</label>
-                    <input id="lastName" type="text" name="lastName" required>
-                </div>
-                <div>
-                    <label for="email">E-mail adress</label>
-                    <input id="email" type="email" name="email" required>
-                </div>
-                <div>
-                    <label for="tel">Phone Number</label>
-                    <input id="tel" type="tel" name="tel" required>
+                    <div class="input-wrapper">
+                        <label class="required" for="email">E-mail adress</label>
+                        <input id="email" type="email" name="email" required>
+                    </div>
+                    <div class="input-wrapper input-wrapper-right">
+                        <label class="required" for="tel">Phone Number</label>
+                        <input id="tel" type="tel" name="tel" required>
+                    </div>
                 </div>
             </fieldset>
             <fieldset>
                 <legend>CAT INFO</legend>
                 <div>
-                    <label for="catName">Name</label>
-                    <input id="catName" type="text" name="catName" required>
+                    <div class="input-wrapper">
+                        <label class="required" for="catName">Name</label>
+                        <input id="catName" type="text" name="catName" required>
+                    </div>
+                    <div class="input-wrapper input-wrapper-right">
+                        <label class="required" for="catAge">Age</label>
+                        <input id="catAge" type="number" name="catAge" placeholder="in years" required>
+                    </div>
                 </div>
-                <div>
-                    <label for="catAge">Age</label>
-                    <input id="catAge" type="number" name="catAge" placeholder="in years" required>
-                </div>
-                <div>
-                    <label for="breed">Breed</label>
-                    <input id="breed" type="text" name="breed" required>
-                </div>
-                <div>
-                    <label for="catPhoto">Photo</label>
-                    <input id="catPhoto" type="file" name="catPhoto" accept="image/*" required>
-                </div>
-                <div>
-                    <label for="pedigree">Pedigree Certificate</label>
-                    <input id="pedigree" type="file" name="pedigree" accept="image/*,.pdf">
-                </div>
+                <label class="required" for="breed">Breed</label>
+                <input id="breed" type="text" name="breed" required>
+
+                <label class="required" for="catPhoto">Photo</label>
+                <input class="input-file" id="catPhoto" type="file" name="catPhoto" accept="image/*" required>
+
+                <label for="pedigree">Pedigree Certificate</label>
+                <input class="input-file" id="pedigree" type="file" name="pedigree" accept="image/*,.pdf">
             </fieldset>
             <button type="submit">Sign Up!</button>
         </form>
         <figure>
             <blockquote>
-                <p>Intelligence in the cat is underrated.</p>
+                <p>"Intelligence in the cat is underrated."</p>
             </blockquote>
             <figcaption>—Louis Wain</figcaption>
         </figure>
