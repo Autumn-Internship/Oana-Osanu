@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #faf9f8;
+    color: #222;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+.form-section {
+    max-width: 700px;
+    padding: 20px 34px 90px;
+    margin: 0px 114px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+legend {
+    display: block;
+    font-weight: 600;
+    padding: 0;
+    padding: 1.75rem 0 1.25rem;
+}
+
+.main-legend {
+    font-size: 1.25rem;
+}
+
+label {
+    font-size: .8125rem;
+    margin: .4375rem 0;
+}
+
+abbr[aria-label=required] {
+    color: #d6001c;
+}
+
+.title-label {
+    display: block;
+}
+
+.input-wrapper {
+    display: flex;
+    margin-top: 20px;
+
+    div {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .flex-equal-col {
+        flex: 1;
+    }
+}
+
+.text-input {
+    padding: 14px 25px 14px 10px;
+}
+
+.text-input:not([type=tel]) {
+    width: 100%;
+}
+
+.date-input{
+    padding-left: .6875rem;
+    padding-right: 2.5rem;
+    height: 3.125rem;
+    font-size: 1rem;
+    color: #707070;
+}
+
+.input-description {
+    margin-top: .3125rem;
+    font-size: .6875rem;
+    color: #707070;
+}
+
+.checkbox-wrapper {
+    margin: 20px 0 20px 20px;
+}
+
+.small-text {
+    font-size: .8125rem;
+}
+
+.main-button {
+    display: block;
+    background-color: #222;
+    color: white;
+    margin-top: 20px;
+    padding: 16px;
+    font-size: .8125rem;
+    max-width: 12.625rem;
+    line-height: 1;
+    height: 2.8125rem;
+}
+
+.main-button:active {
+    background-color: white;
+    color: #222;
+    transition: .3s ease;
+}
