@@ -20,13 +20,13 @@
                     <div class="input-wrapper">
                         <div class="flex-equal-col">
                             <label class="title-label" for="email">E-mail<abbr aria-label="required">*</abbr></label>
-                            <input class="text-input" type="email" id="email" name="email" aria-describedby="emailDescription" maxlength="40" required>
-                            <div class="input-description" id="emailDescription">Vă rugăm să introduceţi o adresă de e-mail</div>
+                            <input class="text-input" type="email" id="email" name="email" aria-describedby="email-description" maxlength="40" required>
+                            <div class="input-description" id="email-description">Vă rugăm să introduceţi o adresă de e-mail</div>
                         </div>
                         <div class="flex-equal-col">
                             <label class="title-label" for="password">Parolă<abbr aria-label="required">*</abbr></label>
-                            <input class="text-input" type="password" id="password" name="password" minlength="8" maxlength="25" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).+" aria-describedby="passwordRequirements"  required>
-                            <div class="input-description" id="passwordRequirements">Minimum 8 caractere, 1 cifră, 1 majusculă, 1 minusculă</div>
+                            <input class="text-input" type="password" id="password" name="password" minlength="8" maxlength="25" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).+" aria-describedby="password-requirements"  required>
+                            <div class="input-description" id="password-requirements">Minimum 8 caractere, 1 cifră, 1 majusculă, 1 minusculă</div>
                         </div>
                     </div>
                 </fieldset>
@@ -36,45 +36,45 @@
 
                     <div class="input-wrapper">
                         <div class="flex-equal-col">
-                            <label class="title-label" for="firstName">Prenume<abbr aria-label="required">*</abbr></label>
-                            <input class="text-input" type="text" id="firstName" name="firstName" required>
+                            <label class="title-label" for="first-name">Prenume<abbr aria-label="required">*</abbr></label>
+                            <input class="text-input" type="text" id="first-name" name="first-name" required>
                         </div>
                         <div class="flex-equal-col">
-                            <label class="title-label" for="lastName">Nume<abbr aria-label="required">*</abbr></label>
-                            <input class="text-input" type="text" id="lastName" name="lastName" required>
+                            <label class="title-label" for="last-name">Nume<abbr aria-label="required">*</abbr></label>
+                            <input class="text-input" type="text" id="last-name" name="last-name" required>
                         </div>
                     </div>
                     
                     <div class="input-wrapper">
                         <div class="flex-equal-col">
                             <label class="title-label" for="adress">Adresă<abbr aria-label="required">*</abbr></label>
-                            <input class="text-input" type="text" id="adress" name="adress" aria-describedby="adressDescription" required>
-                            <div class="input-description" id="adressDescription">Adresă (stradă și număr)</div>
+                            <input class="text-input" type="text" id="adress" name="adress" aria-describedby="adress-description" required>
+                            <div class="input-description" id="adress-description">Adresă (stradă și număr)</div>
                         </div>
                         <div class="flex-equal-col">
-                            <label class="title-label" for="adressDetails">Continuare adresă</label>
-                            <input class="text-input" type="text" id="adressDetails" name="adressDetails" aria-describedby="adressDetailsDescription">
-                            <div class="input-description" id="adressDetailsDescription">Bloc, etaj, apartament etc.</div>
+                            <label class="title-label" for="adress-details">Continuare adresă</label>
+                            <input class="text-input" type="text" id="adress-details" name="adress-details" aria-describedby="adress-details-description">
+                            <div class="input-description" id="adress-details-description">Bloc, etaj, apartament etc.</div>
                         </div>
                     </div>
                     
                     <div class="input-wrapper">
                         <div class="flex-equal-col">
                             <label class="title-label" for="city">Oraș(Nu utilizați abrevieri)<abbr aria-label="required">*</abbr></label>
-                            <input class="text-input" type="text" id="city" name="city" aria-describedby="cityDescription" required>
-                            <div class="input-description" id="cityDescription">Localitate</div>
+                            <input class="text-input" type="text" id="city" name="city" aria-describedby="city-description" required>
+                            <div class="input-description" id="city-description">Localitate</div>
                         </div>
                         <div class="flex-equal-col">
-                            <label class="title-label" for="postalCode">Cod poștal<abbr aria-label="required">*</abbr></label>
-                            <input class="text-input" type="text" id="postalCode" name="postalCode" pattern="\d{6}" aria-describedby="postalCodeDescription" required>
-                            <div class="input-description" id="postalCodeDescription">Introduceţi codul dvs. poştal. De exemplu 030036</div>
+                            <label class="title-label" for="postal-code">Cod poștal<abbr aria-label="required">*</abbr></label>
+                            <input class="text-input" type="text" id="postal-code" name="postal-code" pattern="\d{6}" aria-describedby="postal-code-description" required>
+                            <div class="input-description" id="postal-code-description">Introduceţi codul dvs. poştal. De exemplu 030036</div>
                         </div>
                     </div>
                 </fieldset>
 
                 <div class="checkbox-wrapper">
-                    <input type="checkbox" name="emailMarketing" id="emailMarketing">
-                    <label for="emailMarketing">Da, trimite-mi oferte prin e-mail, invitații speciale la promoții și evenimente și noutăți despre ultimele tendințe
+                    <input type="checkbox" name="email-marketing" id="email-marketing">
+                    <label for="email-marketing">Da, trimite-mi oferte prin e-mail, invitații speciale la promoții și evenimente și noutăți despre ultimele tendințe
                     </label>
                 </div>
                 
@@ -83,21 +83,21 @@
                     <div class="input-wrapper">
                         <div class="flex-equal-col">
                             <label class="title-label" for="birthday">Data nașterii<abbr aria-label="required">*</abbr></label>
-                            <input class="date-input" type="date" id="birthday" name="birthday" max="2002-12-31" aria-describedby="dateInstruction" required>
+                            <input class="date-input" type="date" id="birthday" name="birthday" max="2002-12-31" aria-describedby="date-instruction" required>
                         </div>
                         <div>
-                            <label class="title-label" for="phoneNr">Număr de mobil<abbr aria-label="required">*</abbr></label>
-                            <input class="text-input" title="Prefix" type="tel" name="phonePrefix" value="+40" pattern="^(?:\s*)\+[0-9]{1,4}(?:\s*)$" maxlength="4" size="2" required>
-                            <input class="text-input" id="phoneNr" type="tel" name="phoneNr" pattern="\d{9}" aria-describedby="phoneInstruction" required>
-                            <div class="input-description" id="phoneInstruction">De ex 756 155 860</div>
+                            <label class="title-label" for="phone-nr">Număr de mobil<abbr aria-label="required">*</abbr></label>
+                            <input class="text-input" title="Prefix" type="tel" name="phone-prefix" value="+40" pattern="^(?:\s*)\+[0-9]{1,4}(?:\s*)$" maxlength="4" size="2" required>
+                            <input class="text-input" id="phone-nr" type="tel" name="phone-nr" pattern="\d{9}" aria-describedby="phone-instruction" required>
+                            <div class="input-description" id="phone-instruction">De ex 756 155 860</div>
                         </div>
                     </div>
                 </fieldset>
 
-                <div class="small-text" id="termsAndConfidentiality">Dând clic pe „Continuă cu livrarea”, sunt de acord cu Termenii și condițiile calității de membru în programul de loialitate H&M.
+                <div class="small-text" id="terms-and-confidentiality">Dând clic pe „Continuă cu livrarea”, sunt de acord cu Termenii și condițiile calității de membru în programul de loialitate H&M.
                     <br><br>H&M îți va prelucra datele cu caracter personal pentru a-ți oferi o experiență de membru completă, în conformitate cu Politica de confidențialitate H&M.
                 </div>
-                <input class="main-button" type="submit" aria-describedby="termsAndConfidentiality" value="CONTINUATI CU LIVRAREA">
+                <input class="main-button" type="submit" aria-describedby="terms-and-confidentiality" value="CONTINUATI CU LIVRAREA">
             </form>
         </section>
     </main>
