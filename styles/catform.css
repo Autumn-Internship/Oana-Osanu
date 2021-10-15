@@ -133,6 +133,33 @@ figure {
     color: #E60000;
 }
 
+
+.gallery-container {
+    margin: 48px auto;
+    max-width: 800px;
+    padding: 32px;
+}
+
+.viewer {
+    width: 100%;
+    height: auto;
+}
+
+.image-list {
+    padding: 0;
+    width: 100%;
+    overflow-y: hidden;
+    display: flex;
+    column-gap: 10px;
+    list-style-type: none;
+    height: 160px;
+}
+
+.image-item {
+    max-width: 100%;
+    height: auto;
+}
+
 @media only screen and (max-width: 321px) {
 
     input::file-selector-button {
